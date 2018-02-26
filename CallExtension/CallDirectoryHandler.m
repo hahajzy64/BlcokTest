@@ -90,8 +90,9 @@
     return YES;
 }
 
-// 下方是原始生成的代码，没用到，可能是系统电话界面添加标记或block用。
+// 下方是原始生成的示例代码
 
+// 批量添加屏蔽
 //- (void)addAllBlockingPhoneNumbersToContext:(CXCallDirectoryExtensionContext *)context {
 //    // Retrieve phone numbers to block from data store. For optimal performance and memory usage when there are many phone numbers,
 //    // consider only loading a subset of numbers at a given time and using autorelease pool(s) to release objects allocated during each batch of numbers which are loaded.
@@ -104,7 +105,8 @@
 //        [context addBlockingEntryWithNextSequentialPhoneNumber:phoneNumber];
 //    }
 //}
-//
+
+// 批量添加、删除屏蔽
 //- (void)addOrRemoveIncrementalBlockingPhoneNumbersToContext:(CXCallDirectoryExtensionContext *)context {
 //    // Retrieve any changes to the set of phone numbers to block from data store. For optimal performance and memory usage when there are many phone numbers,
 //    // consider only loading a subset of numbers at a given time and using autorelease pool(s) to release objects allocated during each batch of numbers which are loaded.
@@ -125,7 +127,8 @@
 //
 //    // Record the most-recently loaded set of blocking entries in data store for the next incremental load...
 //}
-//
+
+// 批量添加标记
 //- (void)addAllIdentificationPhoneNumbersToContext:(CXCallDirectoryExtensionContext *)context {
 //    // Retrieve phone numbers to identify and their identification labels from data store. For optimal performance and memory usage when there are many phone numbers,
 //    // consider only loading a subset of numbers at a given time and using autorelease pool(s) to release objects allocated during each batch of numbers which are loaded.
@@ -140,7 +143,8 @@
 //        [context addIdentificationEntryWithNextSequentialPhoneNumber:phoneNumber label:label];
 //    }
 //}
-//
+
+// 批量添加、删除标记
 //- (void)addOrRemoveIncrementalIdentificationPhoneNumbersToContext:(CXCallDirectoryExtensionContext *)context {
 //    // Retrieve any changes to the set of phone numbers to identify (and their identification labels) from data store. For optimal performance and memory usage when there are many phone numbers,
 //    // consider only loading a subset of numbers at a given time and using autorelease pool(s) to release objects allocated during each batch of numbers which are loaded.
